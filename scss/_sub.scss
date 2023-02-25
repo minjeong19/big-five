@@ -32,7 +32,7 @@
         &:checked + label {
           width: 35px;
           border: 2px solid black;
-          background: #d3d1ff;
+          background: #f2d9b1;
         }
         &:hover + label {
           // background-color: black;
@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 40px;
     .progress-bar {
       text-align: center;
       appearance: none;
@@ -59,7 +59,8 @@
       }
       &::-webkit-progress-value {
         //바 게이지
-        background: #5a3f87;
+        // background: #5a3f87;
+        background: #f2d9b1;
         height: 28px;
         width: 48px;
       }
@@ -67,7 +68,8 @@
     .question-count {
       margin-top: 7px;
       font-size: 19px;
-      color: #5a3f87;
+      // color: #5a3f87;
+      // color: #f2cb05;
     }
   }
 }

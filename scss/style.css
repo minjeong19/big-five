@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
 body {
-  background-image: url(../img/bg-main.png);
+  background-image: url(../img/bg2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -102,7 +102,7 @@ body {
 .content .answer .col-2 input[type=radio]:checked + label {
   width: 35px;
   border: 2px solid black;
-  background: #d3d1ff;
+  background: #f2d9b1;
 }
 .content .answer .col-2 input[type=radio]:hover + label {
   cursor: pointer;
@@ -111,7 +111,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .content .question-status .progress-bar {
   text-align: center;
@@ -125,12 +125,11 @@ body {
   width: 280px;
 }
 .content .question-status .progress-bar::-webkit-progress-value {
-  background: #5a3f87;
+  background: #f2d9b1;
   height: 28px;
   width: 48px;
 }
 .content .question-status .question-count {
   margin-top: 7px;
   font-size: 19px;
-  color: #5a3f87;
 }/*# sourceMappingURL=style.css.map */
