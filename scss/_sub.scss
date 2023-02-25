@@ -1,0 +1,42 @@
+.content {
+  .question {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 70px;
+      height: auto;
+    }
+    .text {
+      margin-top: 20px;
+      font-size: 30px;
+    }
+  }
+  .question-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .progress-bar {
+      text-align: center;
+      appearance: none;
+      &::-webkit-progress-bar {
+        //바의 외관
+        background: #ffffff;
+        height: 28px;
+        width: 200px;
+        // border: 2px solid black;
+        // overflow: hidden;
+      }
+      &::-webkit-progress-value {
+        //바 게이지
+        background: #5a3f87;
+        height: 28px;
+        width: 48px;
+      }
+    }
+    .question-count {
+      font-size: 19px;
+      color: #5a3f87;
+    }
+  }
+}

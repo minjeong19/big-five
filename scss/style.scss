@@ -3,6 +3,8 @@
 // font-family: 'VT323', monospace;
 @import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
 // font-family: 'Galmuri14'
+
+//MAIN
 body {
   background-image: url(../img/bg-main.png);
   background-repeat: no-repeat;
@@ -77,3 +79,6 @@ body {
     height: 45px;
   }
 }
+
+//SUB
+@import "sub";
