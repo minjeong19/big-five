@@ -90,19 +90,20 @@ body {
   justify-content: center;
 }
 .content .answer .col-2 {
-  width: 35px;
-  height: 45px;
+  width: 50px;
+  height: 55px;
   margin: 10px;
-  line-height: 40px;
+  line-height: 48px;
   border: 2px solid black;
 }
 .content .answer .col-2 input[type=radio] {
   display: none;
 }
 .content .answer .col-2 input[type=radio]:checked + label {
-  width: 35px;
+  width: 48px;
+  height: 55px;
   border: 2px solid black;
-  background: #f2d9b1;
+  background: #a68147;
 }
 .content .answer .col-2 input[type=radio]:hover + label {
   cursor: pointer;
