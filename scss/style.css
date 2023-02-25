@@ -126,7 +126,7 @@ body {
   width: 280px;
 }
 .content .question-status .progress-bar::-webkit-progress-value {
-  background: #f2d9b1;
+  background: #a68147;
   height: 28px;
   width: 48px;
 }
