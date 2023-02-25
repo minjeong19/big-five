@@ -4,7 +4,7 @@
 @import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
 // font-family: 'Galmuri14'
 body {
-  background-image: url(back.png);
+  background-image: url(../img/bg-main.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,6 +28,7 @@ body {
     align-items: center;
     #name {
       margin-top: 0.5rem;
+      font-size: 37px;
       font-family: "VT323", "Galmuri14", monospace;
     }
   }
@@ -40,7 +41,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid black;
     width: 100%;
-    height: calc(100vh - 59px - 75px - 64px - 45px);
+    height: calc(100vh - 59px - 75px - 64px - 45px); //헤더 반으로 줄인거
 
     .main {
       width: 232px;
@@ -55,6 +56,9 @@ body {
       margin-top: 10px;
       margin-bottom: 10px;
       font-family: "VT323", "Galmuri14", monospace;
+      span {
+        font-size: 22px;
+      }
     }
   }
   footer {

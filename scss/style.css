@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
 body {
-  background-image: url(back.png);
+  background-image: url(../img/bg-main.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -27,6 +27,7 @@ body {
 }
 .container-sm header #name {
   margin-top: 0.5rem;
+  font-size: 37px;
   font-family: "VT323", "Galmuri14", monospace;
 }
 .container-sm img {
@@ -53,6 +54,9 @@ body {
   margin-bottom: 10px;
   font-family: "VT323", "Galmuri14", monospace;
 }
+.container-sm .content .text span {
+  font-size: 22px;
+}
 .container-sm footer {
   width: 100%;
   height: 64px;
@@ -64,4 +68,4 @@ body {
 .container-sm .home-indicator {
   width: 100%;
   height: 45px;
-}/*# sourceMappingURL=test.css.map */
+}/*# sourceMappingURL=style.css.map */
