@@ -73,7 +73,7 @@ body {
 .content .question {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 75px;
 }
 .content .question img {
   width: 70px;
@@ -82,23 +82,29 @@ body {
 .content .question .text {
   margin-top: 20px;
   font-size: 26px;
+  font-weight: bold;
 }
 .content .answer {
+  display: flex;
   margin: 25px;
+  justify-content: center;
 }
-.content .answer input[type=radio] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.content .answer .col-2 {
+  width: 35px;
+  height: 45px;
+  margin: 10px;
+  line-height: 40px;
   border: 2px solid black;
-  width: 40px;
-  height: 25px;
 }
-.content .answer input[type=radio]:checked {
-  background-color: #5a3f87;
+.content .answer .col-2 input[type=radio] {
+  display: none;
 }
-.content .answer input[type=radio]:hover {
-  box-shadow: 0 0 0 max(4px, 0.2em) rgb(219, 168, 255);
+.content .answer .col-2 input[type=radio]:checked + label {
+  width: 35px;
+  border: 2px solid black;
+  background: #d3d1ff;
+}
+.content .answer .col-2 input[type=radio]:hover + label {
   cursor: pointer;
 }
 .content .question-status {

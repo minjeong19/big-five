@@ -2,7 +2,7 @@
   .question {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 75px;
     img {
       width: 70px;
       height: auto;
@@ -10,21 +10,34 @@
     .text {
       margin-top: 20px;
       font-size: 26px;
+      font-weight: bold;
     }
   }
   .answer {
+    display: flex;
     margin: 25px;
-    input[type="radio"] {
-      appearance: none;
+    justify-content: center;
+
+    .col-2 {
+      width: 35px;
+      height: 45px;
+      margin: 10px;
+      // height: -webkit-fill-available;
+      line-height: 40px;
       border: 2px solid black;
-      width: 40px;
-      height: 25px;
-      &:checked {
-        background-color: #5a3f87;
-      }
-      &:hover {
-        box-shadow: 0 0 0 max(4px, 0.2em) rgb(219, 168, 255);
-        cursor: pointer;
+
+      input[type="radio"] {
+        display: none;
+
+        &:checked + label {
+          width: 35px;
+          border: 2px solid black;
+          background: #d3d1ff;
+        }
+        &:hover + label {
+          // background-color: black;
+          cursor: pointer;
+        }
       }
     }
   }
