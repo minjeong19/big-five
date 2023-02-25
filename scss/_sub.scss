@@ -2,6 +2,7 @@
   .question {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
     img {
       width: 70px;
       height: auto;
@@ -11,11 +12,35 @@
       font-size: 30px;
     }
   }
+  .answer {
+    margin: 10px;
+    input[type="radio"] {
+      display: none;
+      & + label {
+        display: inline-block;
+        cursor: pointer;
+        height: 24px;
+        width: 90px;
+        border: 1px solid #333;
+        line-height: 24px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 13px;
+
+        background-color: #fff;
+        color: #333;
+      }
+      &:checked + label {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+  }
   .question-status {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-top: 30px;
     .progress-bar {
       text-align: center;
       appearance: none;
@@ -35,6 +60,7 @@
       }
     }
     .question-count {
+      margin-top: 7px;
       font-size: 19px;
       color: #5a3f87;
     }
