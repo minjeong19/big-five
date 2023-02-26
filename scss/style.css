@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
 body {
-  background-image: url(../img/bg2.png);
+  background-image: url(../img/bg-main.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -28,7 +28,8 @@ body {
 .container-sm header #name {
   margin-top: 0.5rem;
   font-size: 35px;
-  font-family: "VT323", "Galmuri14", monospace;
+  font-family: "Galmuri14", monospace;
+  font-weight: 600;
 }
 .container-sm img {
   width: 30px;
@@ -74,6 +75,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 75px;
+  background-color: rgba(240, 248, 255, 0.915);
 }
 .content .question img {
   width: 70px;
@@ -93,19 +95,20 @@ body {
   width: 50px;
   height: 55px;
   margin: 10px;
+  height: -webkit-fill-available;
   line-height: 48px;
   border: 2px solid black;
 }
-.content .answer .col-2 input[type=radio] {
+.content .answer .col-2 input[type="radio"] {
   display: none;
 }
-.content .answer .col-2 input[type=radio]:checked + label {
-  width: 48px;
+.content .answer .col-2 input[type="radio"]:checked + label {
+  width: 50px;
   height: 55px;
   border: 2px solid black;
   background: #a68147;
 }
-.content .answer .col-2 input[type=radio]:hover + label {
+.content .answer .col-2 input[type="radio"]:hover + label {
   cursor: pointer;
 }
 .content .question-status {
@@ -117,8 +120,8 @@ body {
 .content .question-status .progress-bar {
   text-align: center;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .content .question-status .progress-bar::-webkit-progress-bar {
   background: #ffffff;
@@ -133,4 +136,8 @@ body {
 .content .question-status .question-count {
   margin-top: 7px;
   font-size: 19px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+#qna {
+  display: none;
+} /*# sourceMappingURL=style.css.map */

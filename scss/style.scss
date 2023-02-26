@@ -6,7 +6,7 @@
 
 //MAIN
 body {
-  background-image: url(../img/bg2.png);
+  background-image: url(../img/bg-main.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,7 +31,9 @@ body {
     #name {
       margin-top: 0.5rem;
       font-size: 35px;
-      font-family: "VT323", "Galmuri14", monospace;
+      font-family: "Galmuri14", monospace;
+      // "VT323",
+      font-weight: 600;
     }
   }
   img {
@@ -82,3 +84,6 @@ body {
 
 //SUB
 @import "sub";
+
+//QNA
+@import "qna";

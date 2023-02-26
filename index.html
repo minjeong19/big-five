@@ -25,12 +25,12 @@
     ></script>
     <!-- MAIN  SCRIPT -->
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/start.js"></script>
     <!-- MAIN STYLE -->
     <link rel="stylesheet" href="./scss/style.css" />
   </head>
   <body>
-    <div class="container-sm">
-      <div class="status-bar"></div>
+    <div class="container-sm my-5">
       <!-- HEADER -->
       <header>
         <img class="home" src="./img/home.png" alt="홈" />
@@ -38,16 +38,22 @@
         <img src="./img/bar.png" alt="목록" />
       </header>
       <!-- CONTENT -->
-      <div class="content">
-        <img class="main" src="./img/big5.png" alt="" />
+      <section class="content">
+        <img class="main" src="./img/big5.png" alt="질문이미지" />
         <div class="text">
           우리의 성격을 5가지의 상호 독립적인 요인으로 알아보아요!
           <br /><span> (개방성, 성실성, 외향성, 우호성, 신경증) </span>
         </div>
-        <a href="./sub.html">
-          <img class="start" src="./img/start.png" alt="시작버튼" />
-        </a>
-      </div>
+        <img
+          class="start"
+          src="./img/start.png"
+          onclick="js:begin()"
+          alt="시작버튼"
+        />
+      </section>
+      <section id="qna">
+        <p>text</p>
+      </section>
       <!-- FOOTER -->
       <footer><div>ⓒ 2023 Front-end Test-World Project.</div></footer>
       <div class="home-indicator"></div>
