@@ -83,32 +83,37 @@ body {
 }
 .all .main .qna .aBox {
   display: flex;
+  flex-direction: column;
   margin-top: 30px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.all .main .qna .aBox .col-2 {
+.all .main .qna .aBox .radio {
+  display: flex;
+  justify-content: space-evenly;
+}
+.all .main .qna .aBox .select {
   width: 55px;
   height: 55px;
   margin: 10px;
   background-image: url("../img/btn.png");
   background-size: cover;
 }
-.all .main .qna .aBox .col-2 input[type=radio] {
+.all .main .qna .aBox .select input[type=radio] {
   width: 100%;
   height: 100%;
   opacity: 0;
 }
-.all .main .qna .aBox .col-2 input[type=radio]:hover {
+.all .main .qna .aBox .select input[type=radio]:hover {
   cursor: pointer;
 }
-.all .main .qna .aBox .col-2 input[type=radio]:checked {
+.all .main .qna .aBox .select input[type=radio]:checked {
   display: none;
 }
-.all .main .qna .aBox .col-2 input[type=radio]:checked + label {
+.all .main .qna .aBox .select input[type=radio]:checked + label {
   background-image: url("../img/btnpush.png");
   background-size: cover;
 }
-.all .main .qna .aBox .col-2 label {
+.all .main .qna .aBox .select label {
   border-radius: 50%;
   width: 100%;
   height: 100%;

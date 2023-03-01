@@ -30,10 +30,15 @@
       }
       .aBox {
         display: flex;
+        flex-direction: column;
         margin-top: 30px;
-        justify-content: center;
+        justify-content: space-evenly;
 
-        .col-2 {
+        .radio {
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .select {
           width: 55px;
           height: 55px;
           margin: 10px;
